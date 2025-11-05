@@ -5,16 +5,6 @@ import InsightedLogo from '@/icons/projects/insighted.svelte';
 
 export const featuredProjects: iProjects[] = [
   {
-    title: 'Faktur',
-    description:
-      '💼 A modern invoicing platform designed for freelancers and small businesses — simple, fast, and privacy-focused.',
-    tags: ['Next.js', 'Tailwind CSS', 'TypeScript', 'Vercel', 'PostgreSQL', 'Prisma', 'Railway'],
-    // icon: FakturLogo,
-    status: 'wip',
-    color: '#ff9a0a',
-    blurColor: 'rgba(255, 154, 10, 0.1)'
-  },
-  {
     title: 'Mark',
     description:
       '🔗 An open-source habit tracker to help you build good habits and break bad ones.',
@@ -28,9 +18,9 @@ export const featuredProjects: iProjects[] = [
       'Railway',
       'Auth.js'
     ],
-    githubUrl: 'https://github.com/XzuicerJr/mark',
+    githubUrl: 'https://github.com/heyzamora/mark',
     url: 'https://mark.zmra.dev',
-    icon: 'https://raw.githubusercontent.com/XzuicerJr/mark/main/public/assets/logo.svg',
+    icon: 'https://raw.githubusercontent.com/heyzamora/mark/main/public/assets/logo.svg',
     status: 'live',
     color: '#008904',
     blurColor: 'rgba(0, 137, 4, 0.1)'
@@ -56,8 +46,8 @@ export const featuredProjects: iProjects[] = [
     title: 'Gen UUID',
     description: '✍️ An open-source UUID generator for the terminal.',
     tags: ['Python', 'CLI'],
-    githubUrl: 'https://github.com/XzuicerJr/gen-uuid',
-    icon: 'https://raw.githubusercontent.com/XzuicerJr/gen-uuid/main/public/images/logo.svg',
+    githubUrl: 'https://github.com/heyzamora/gen-uuid',
+    icon: 'https://raw.githubusercontent.com/heyzamora/gen-uuid/main/public/images/logo.svg',
     status: null,
     color: '#52b4a5',
     blurColor: 'rgba(82, 180, 165, 0.1)'

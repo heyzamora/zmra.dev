@@ -31,7 +31,7 @@
       </p>
     </div>
     <a
-      href="https://github.com/XzuicerJr?tab=repositories"
+      href="https://github.com/heyzamora?tab=repositories"
       class="group flex items-center space-x-1"
       target="_blank"
       rel="noopener noreferrer"

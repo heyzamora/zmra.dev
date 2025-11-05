@@ -11,11 +11,11 @@
         Website
     </a>
     <span>&nbsp;❖&nbsp;</span>
-    <a href="https://github.com/XzuicerJr/zamora.dev?tab=readme-ov-file#-stack">
+    <a href="https://github.com/heyzamora/zmra.dev?tab=readme-ov-file#-stack">
         Stack
     </a>
     <span>&nbsp;❖&nbsp;</span>
-    <a href="https://github.com/XzuicerJr/zamora.dev?tab=readme-ov-file#-contributing">
+    <a href="https://github.com/heyzamora/zmra.dev?tab=readme-ov-file#-contributing">
         Contribute
     </a>
     <span>&nbsp;❖&nbsp;</span>
@@ -23,11 +23,11 @@
         X
     </a>
     <span>&nbsp;❖&nbsp;</span>
-    <a href="https://github.com/XzuicerJr/zamora.dev?tab=readme-ov-file#-license">
+    <a href="https://github.com/heyzamora/zmra.dev?tab=readme-ov-file#-license">
         License
     </a>
     <span>&nbsp;❖&nbsp;</span>
-    <a href="https://github.com/XzuicerJr/zamora.dev?tab=readme-ov-file#-thanks-to-pheralb">
+    <a href="https://github.com/heyzamora/zmra.dev?tab=readme-ov-file#-thanks-to-pheralb">
         Original Template
     </a>
 </div>
@@ -39,10 +39,10 @@
 ![Svelte Badge](https://img.shields.io/badge/Sveltekit-FF3E00?logo=svelte&logoColor=fff&style=flat)
 ![Vercel Badge](https://img.shields.io/badge/Vercel-000?logo=vercel&logoColor=fff&style=flat)
 ![Tailwind CSS Badge](https://img.shields.io/badge/Tailwind%20CSS-06B6D4?logo=tailwindcss&logoColor=fff&style=flat)
-![GitHub stars](https://img.shields.io/github/stars/XzuicerJr/zamora.dev)
-![GitHub issues](https://img.shields.io/github/issues/XzuicerJr/zamora.dev)
-![GitHub forks](https://img.shields.io/github/forks/XzuicerJr/zamora.dev)
-![GitHub PRs](https://img.shields.io/github/issues-pr/XzuicerJr/zamora.dev)
+![GitHub stars](https://img.shields.io/github/stars/heyzamora/zmra.dev)
+![GitHub issues](https://img.shields.io/github/issues/heyzamora/zmra.dev)
+![GitHub forks](https://img.shields.io/github/forks/heyzamora/zmra.dev)
+![GitHub PRs](https://img.shields.io/github/issues-pr/heyzamora/zmra.dev)
 </div>
 
 
@@ -58,7 +58,7 @@
 
 ## 🚀 Contributing
 
-1. [Fork](https://github.com/XzuicerJr/zamora.dev/fork) the repository.
+1. [Fork](https://github.com/heyzamora/zmra.dev/fork) the repository.
 
 2. Install dependencies:
 
@@ -80,7 +80,7 @@ Open up [http://localhost:5173](http://localhost:5173) and make your changes ✨
 
 ## 📄 License
 
-- [**Apache-2.0 license**](https://github.com/XzuicerJr/zamora.dev?tab=Apache-2.0-1-ov-file#readme).
+- [**Apache-2.0 license**](https://github.com/heyzamora/zmra.dev?tab=Apache-2.0-1-ov-file#readme).
 
 ## 🤝 Thanks to [pheralb](https://github.com/pheralb)
 

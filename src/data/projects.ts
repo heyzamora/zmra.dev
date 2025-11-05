@@ -3,11 +3,11 @@ import { featuredProjects } from './featuredProjects';
 
 export const projects: iProjects[] = featuredProjects.concat([
   {
-    title: 'Github Profile - XzuicerJr',
+    title: 'Github Profile - heyzamora',
     description: 'Github Profile README Generator using Python and Github Actions',
     tags: ['Python', 'Github'],
-    url: 'https://github.com/XzuicerJr',
-    githubUrl: 'https://github.com/XzuicerJr/XzuicerJr',
+    url: 'https://github.com/heyzamora',
+    githubUrl: 'https://github.com/heyzamora/heyzamora',
     status: 'live'
   },
   {
@@ -15,8 +15,8 @@ export const projects: iProjects[] = featuredProjects.concat([
     description: '🪄 My personal website.',
     tags: ['Svelte', 'Shadcn', 'Tailwind CSS', 'TypeScript', 'Github', 'Vercel'],
     url: 'https://zmra.dev',
-    githubUrl: 'https://github.com/XzuicerJr/zamora.dev',
-    icon: 'https://raw.githubusercontent.com/XzuicerJr/zamora.dev/master/static/images/logo_svg.svg',
+    githubUrl: 'https://github.com/heyzamora/zmra.dev',
+    icon: 'https://raw.githubusercontent.com/heyzamora/zmra.dev/master/static/images/logo_svg.svg',
     status: 'live'
   }
 ]);

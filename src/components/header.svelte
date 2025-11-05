@@ -21,7 +21,7 @@
     },
     {
       name: 'GitHub',
-      url: 'https://github.com/XzuicerJr',
+      url: 'https://github.com/heyzamora',
       icon: Github,
       iconSize: 18
     }

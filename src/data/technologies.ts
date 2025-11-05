@@ -37,7 +37,7 @@ export const technologies: Technologies[] = [
   },
   {
     stack: 'Auth.js',
-    icon: 'https://raw.githubusercontent.com/XzuicerJr/zamora.dev/master/src/icons/stack/authjs.png'
+    icon: 'https://raw.githubusercontent.com/heyzamora/zmra.dev/master/src/icons/stack/authjs.png'
   },
   {
     stack: 'CLI',
