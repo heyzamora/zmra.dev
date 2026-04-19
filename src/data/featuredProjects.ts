@@ -26,7 +26,7 @@ export const featuredProjects: iProjects[] = [
     blurColor: 'rgba(0, 137, 4, 0.1)'
   },
   {
-    title: 'InsightEd',
+    title: 'Lupin',
     description:
       '🔍 A platform that helps teachers track and manage students, classes, and academic progress.',
     tags: [
