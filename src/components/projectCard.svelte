@@ -2,12 +2,12 @@
   import type { iProjects } from '@/types/featuredProjects.types';
 
   import { mode } from 'mode-watcher';
-  import { ExternalLink, Link } from 'lucide-svelte';
+  import { ExternalLink, Link, Newspaper } from 'lucide-svelte';
 
   import Github from '@/icons/social/github.svelte';
   import Badge from '@/ui/badge/badge.svelte';
   import SpotlightBadge from '@/ui/badge/spotlight-badge.svelte';
-  import { technologies } from '@/data/technologies';
+  import TechBadgeList from './techBadgeList.svelte';
     import Button from '@/ui/button/button.svelte';
 
   let div: HTMLDivElement | undefined = $state();
@@ -45,7 +45,19 @@
     opacity = 0;
   };
 
-  let { title, description, icon: Icon, url, githubUrl, tags, status, color, blurColor, freelance }: iProjects = $props();
+  let {
+    title,
+    description,
+    icon: Icon,
+    url,
+    githubUrl,
+    tags,
+    status,
+    color,
+    blurColor,
+    freelance,
+    postCount = 0
+  }: iProjects & { postCount?: number } = $props();
 
   const getStatusColor = (status: string | null) => {
     switch (status) {
@@ -129,25 +141,22 @@
       </div>
     </div>
     <p class="text-sm dark:text-neutral-400">{description}</p>
-    <div class="flex flex-wrap items-center gap-1 overflow-y-auto">
-      {#each tags as tag}
-        {#each technologies.filter((s) => s.stack === tag) as { icon: Icon }}
-          <Badge extraClasses="whitespace-nowrap">
-            {#if typeof Icon === 'string'}
-              {#if Icon !== ''}
-                <img src={Icon} alt={tag} height={14} width={14} class="flex-shrink-0 size-3.5" />
-              {/if}
-            {:else}
-              <Icon width={14} height={14} class="flex-shrink-0" />
-            {/if}
-            <span>{tag}</span>
-          </Badge>
-        {/each}
-      {/each}
-    </div>
+    <TechBadgeList {tags} />
   </div>
-    {#if url || githubUrl}
+    {#if url || githubUrl || postCount > 0}
     <div class="flex items-center gap-2 justify-end">
+      {#if postCount > 0}
+        <a
+          href="/blog?project={encodeURIComponent(title)}"
+          class="group mr-auto flex items-center gap-1 text-xs text-neutral-600 transition-colors duration-150 hover:text-black dark:text-neutral-400 dark:hover:text-white"
+        >
+          <Newspaper size={13} strokeWidth={1.5} />
+          <span class="underline decoration-dotted underline-offset-[0.1875rem]">
+            {postCount}
+            {postCount > 1 ? 'posts' : 'post'}
+          </span>
+        </a>
+      {/if}
       {#if url}
         <Button variant="outline" size="sm" class="space-x-1 border group border-gray-500 bg-gray-500/10 hover:bg-gray-500/20" target="_blank" rel="noopener" href={url}>
           <span class="decoration-dotted underline-offset-[0.3125rem] group-hover:underline">Live</span>

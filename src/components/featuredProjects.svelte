@@ -1,6 +1,7 @@
 <script lang="ts">
   import { cn } from '@/utils';
   import { featuredProjects } from '@/data/featuredProjects';
+  import { getPostsForProject } from '@/data/posts';
   import { ArrowRight } from 'lucide-svelte';
 
   import ProjectCard from './projectCard.svelte';
@@ -22,7 +23,7 @@
   </div>
   <div class="grid grid-cols-1 gap-3 md:grid-cols-2">
     {#each featuredProjects as project}
-      <ProjectCard {...project} />
+      <ProjectCard {...project} postCount={getPostsForProject(project.title).length} />
     {/each}
   </div>
 </section>
