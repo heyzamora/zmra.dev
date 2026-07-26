@@ -3,7 +3,7 @@
   import Badge from '@/ui/badge/badge.svelte';
   import SpotlightBadge from '@/ui/badge/spotlight-badge.svelte';
   import { cn } from '@/utils';
-  import { Building2, Download, ExternalLink, MapPin } from 'lucide-svelte';
+  import { Briefcase, Building2, Download, ExternalLink, MapPin } from 'lucide-svelte';
   import { technologies } from '@/data/technologies';
   import { Button } from '@/ui/button';
 </script>
@@ -29,7 +29,7 @@
           {#if experience.companyLogo}
             <experience.companyLogo width={18} height={18} class="flex-shrink-0" />
           {:else}
-            <Building2 size={18} class="flex-shrink-0 opacity-50" />
+            <Briefcase size={18} class="flex-shrink-0 opacity-50" />
           {/if}
         </div>
         <time
@@ -52,20 +52,27 @@
               {experience.location}
             </p>
           </div>
-          <a
-            href={experience.companyUrl}
-            target="_blank"
-            rel="noopener"
-            class="group flex w-max items-center text-pretty text-sm text-neutral-600 transition-colors duration-150 hover:text-black dark:border-neutral-800 dark:text-neutral-400 dark:hover:text-white"
-          >
-            <Building2 size={12} strokeWidth={1.5} class="mr-1" />
-            <span>{experience.company}</span>
-            <ExternalLink
-              class="ml-1 duration-150 group-hover:translate-x-[0.09rem]"
-              size={12}
-              strokeWidth={1.5}
-            />
-          </a>
+          {#if experience.companyUrl}
+            <a
+              href={experience.companyUrl}
+              target="_blank"
+              rel="noopener"
+              class="group flex w-max items-center text-pretty text-sm text-neutral-600 transition-colors duration-150 hover:text-black dark:border-neutral-800 dark:text-neutral-400 dark:hover:text-white"
+            >
+              <Building2 size={12} strokeWidth={1.5} class="mr-1" />
+              <span>{experience.company}</span>
+              <ExternalLink
+                class="ml-1 duration-150 group-hover:translate-x-[0.09rem]"
+                size={12}
+                strokeWidth={1.5}
+              />
+            </a>
+          {:else}
+            <div class="flex w-max items-center text-pretty text-sm text-neutral-600 dark:text-neutral-400">
+              <Briefcase size={12} strokeWidth={1.5} class="mr-1" />
+              <span>{experience.company}</span>
+            </div>
+          {/if}
         </div>
         <!-- bind:innerHTML needed to make link inside the text clickable -->
         <p

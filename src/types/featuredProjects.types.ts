@@ -2,6 +2,7 @@ export type Stack =
   | 'Ant Design'
   | 'Auth.js'
   | 'CLI'
+  | 'Expo'
   | 'Figma'
   | 'Github'
   | 'GraphQL'
@@ -16,6 +17,7 @@ export type Stack =
   | 'React'
   | 'SCSS/SASS'
   | 'Shadcn'
+  | 'SQLite'
   | 'Storybook'
   | 'Stripe'
   | 'Styled-Components'
@@ -34,4 +36,5 @@ export interface iProjects {
   icon?: any;
   color?: string;
   blurColor?: string;
+  freelance?: boolean;
 }
