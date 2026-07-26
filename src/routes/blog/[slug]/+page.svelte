@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { page } from '$app/state';
   import { cn } from '@/utils';
   import ViewContainer from '@/components/viewContainer.svelte';
   import ProjectBadge from '@/components/projectBadge.svelte';
@@ -8,6 +9,8 @@
 
   let { data } = $props();
   let { meta, content: Content } = $derived(data);
+  let ogImage = $derived(`${page.url.origin}/blog/${meta.slug}/og.png`);
+  let postUrl = $derived(`${page.url.origin}/blog/${meta.slug}`);
 
   const formatDate = (date: string) =>
     new Date(date).toLocaleDateString('en-US', {
@@ -20,11 +23,18 @@
 
 <svelte:head>
   <title>{meta.title} - zmra.dev</title>
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content={postUrl} />
   <meta property="og:title" content={meta.title} />
   <meta property="og:description" content={meta.description} />
-  <meta name="image" property="og:image" content="https://zmra.dev/images/readme-img.png" />
+  <meta property="og:image" content={ogImage} />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@heyzamora__" />
+  <meta name="twitter:title" content={meta.title} />
+  <meta name="twitter:description" content={meta.description} />
+  <meta name="twitter:image" content={ogImage} />
 </svelte:head>
 
 <ViewContainer class={cn(routeAnimation, 'flex flex-col space-y-4')}>

@@ -2,7 +2,7 @@
 title: 'Building Rove: a mileage tracker that owns nothing but your data'
 description: 'Why Rove is local-first, how the GPS tracking avoids drifting miles, and what is still on the roadmap.'
 date: '2026-07-25'
-published: false
+published: true
 project: 'Rove'
 tags: ['Expo', 'React', 'TypeScript', 'SQLite']
 ---
