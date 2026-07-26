@@ -6,6 +6,7 @@
 
   import Github from '@/icons/social/github.svelte';
   import Badge from '@/ui/badge/badge.svelte';
+  import SpotlightBadge from '@/ui/badge/spotlight-badge.svelte';
   import { technologies } from '@/data/technologies';
     import Button from '@/ui/button/button.svelte';
 
@@ -44,7 +45,7 @@
     opacity = 0;
   };
 
-  let { title, description, icon: Icon, url, githubUrl, tags, status, color, blurColor }: iProjects = $props();
+  let { title, description, icon: Icon, url, githubUrl, tags, status, color, blurColor, freelance }: iProjects = $props();
 
   const getStatusColor = (status: string | null) => {
     switch (status) {
@@ -112,6 +113,9 @@
           {/if}
         {/if}
         <p class="font-medium">{title}</p>
+        {#if freelance}
+          <SpotlightBadge>Freelance</SpotlightBadge>
+        {/if}
       </div>
       <div class="flex items-center gap-2">
         {#if status !== null}

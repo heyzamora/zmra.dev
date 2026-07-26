@@ -5,6 +5,7 @@ import Github from '@/icons/social/github.svelte';
 
 import Antd from '@/icons/stack/antd.svelte';
 import Cli from '@/icons/stack/cli.svelte';
+import Expo from '@/icons/stack/expo.svelte';
 import Figma from '@/icons/stack/figma.svelte';
 import Graphql from '@/icons/stack/graphql.svelte';
 import JavaScript from '@/icons/stack/javascript.svelte';
@@ -18,6 +19,7 @@ import Radix from '@/icons/stack/radix.svelte';
 import Railway from '@/icons/stack/railway.svelte';
 import Sass from '@/icons/stack/sass.svelte';
 import Shadcn from '@/icons/stack/shadcn.svelte';
+import Sqlite from '@/icons/stack/sqlite.svelte';
 import Storybook from '@/icons/stack/storybook.svelte';
 import StyledComponents from '@/icons/stack/styled-components.svelte';
 import Svelteicon from '@/icons/stack/svelteicon.svelte';
@@ -42,6 +44,10 @@ export const technologies: Technologies[] = [
   {
     stack: 'CLI',
     icon: Cli
+  },
+  {
+    stack: 'Expo',
+    icon: Expo
   },
   {
     stack: 'Figma',
@@ -98,6 +104,10 @@ export const technologies: Technologies[] = [
   {
     stack: 'Shadcn',
     icon: Shadcn
+  },
+  {
+    stack: 'SQLite',
+    icon: Sqlite
   },
   {
     stack: 'Storybook',

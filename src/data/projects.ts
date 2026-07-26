@@ -3,6 +3,16 @@ import { featuredProjects } from './featuredProjects';
 
 export const projects: iProjects[] = featuredProjects.concat([
   {
+    title: 'Gen UUID',
+    description: '✍️ An open-source UUID generator for the terminal.',
+    tags: ['Python', 'CLI'],
+    githubUrl: 'https://github.com/heyzamora/gen-uuid',
+    icon: 'https://raw.githubusercontent.com/heyzamora/gen-uuid/main/public/images/logo.svg',
+    status: null,
+    color: '#52b4a5',
+    blurColor: 'rgba(82, 180, 165, 0.1)'
+  },
+  {
     title: 'Github Profile - heyzamora',
     description: 'Github Profile README Generator using Python and Github Actions',
     tags: ['Python', 'Github'],

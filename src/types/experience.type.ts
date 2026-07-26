@@ -4,7 +4,7 @@ export interface iExperience {
   role: string;
   aboutRole: string;
   company: string;
-  companyUrl: string;
+  companyUrl?: string;
   companyLogo: any;
   location: string;
   technologies: Stack[];
