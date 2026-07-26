@@ -45,6 +45,7 @@
     "eslint-plugin-svelte": "^2.46.1",
     "globals": "15.14.0",
     "hastscript": "9.0.0",
+    "mdsvex": "^0.12.8",
     "postcss": "8.5.1",
     "prettier": "3.4.2",
     "prettier-plugin-svelte": "3.3.3",

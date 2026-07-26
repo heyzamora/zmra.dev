@@ -4,6 +4,7 @@
   
   import { routeAnimation } from "@/ui/shared";
   import { projects } from "@/data/projects";
+  import { getPostsForProject } from "@/data/posts";
   import ProjectCard from "@/components/projectCard.svelte";
   import { ArrowUpRight, GitForkIcon } from "lucide-svelte";
 </script>
@@ -47,7 +48,7 @@
   
   <div class="grid grid-cols-1 gap-3">
     {#each projects as project}
-      <ProjectCard {...project} />
+      <ProjectCard {...project} postCount={getPostsForProject(project.title).length} />
     {/each}
   </div>
 </ViewContainer>
