@@ -1,13 +1,11 @@
 ---
-title: 'Building Rove: a mileage tracker that owns nothing but your data'
+title: 'Building Rove: a mileage tracker that keeps your data on your phone'
 description: 'Why Rove is local-first, how the GPS tracking avoids drifting miles, and what is still on the roadmap.'
 date: '2026-07-25'
 published: true
 project: 'Rove'
 tags: ['Expo', 'React', 'TypeScript', 'SQLite']
 ---
-
-<!-- Draft — factual notes to expand into a real post before publishing. -->
 
 Most mileage trackers for gig work are subscriptions wrapped around a database
 you never see. Rove started from one annoyance: why does tracking miles I
