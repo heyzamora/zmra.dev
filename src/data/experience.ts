@@ -5,6 +5,19 @@ import ReverssoLogo from '@/icons/companies/reversso.svelte';
 
 export const experienceData: iExperience[] = [
   {
+    role: 'Data Intern',
+    aboutRole:
+      'Managed donor database, streamlined communication with current and past donors, and aligned donor information to organizational standards.',
+    company: 'First Nations Development Institute',
+    companyLogo: undefined,
+    startDate: 'Sep 2026',
+    endDate: 'Present',
+    freelance: false,
+    location: 'New Mexico, United States 🇺🇸',
+    technologies: [],
+    latest: true
+  },
+  {
     role: 'Relocation',
     aboutRole:
       'Relocated internationally to the US. I used this transitional period to actively expand my overall engineering toolkit. I focused on refining my approach to building scalable web applications and system design to prepare for a robust, full-time position.',
