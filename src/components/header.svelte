@@ -38,6 +38,16 @@
     Zamora
   </a>
   <nav class="flex items-center space-x-1">
+    <a
+      href="/blog"
+      class={buttonVariants({
+        variant: 'ghost',
+        size: 'sm',
+        class: 'opacity-80 transition-opacity duration-150 hover:opacity-100'
+      })}
+    >
+      Blog
+    </a>
     {#each SocialLinks as { name, url, icon, iconSize}, i}
       {@const SvelteComponent = icon}
       <a

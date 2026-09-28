@@ -1,10 +1,9 @@
 <script>
   import { experienceData } from '@/data/experience';
-  import Badge from '@/ui/badge/badge.svelte';
   import SpotlightBadge from '@/ui/badge/spotlight-badge.svelte';
+  import TechBadgeList from './techBadgeList.svelte';
   import { cn } from '@/utils';
   import { Briefcase, Building2, Download, ExternalLink, MapPin } from 'lucide-svelte';
-  import { technologies } from '@/data/technologies';
   import { Button } from '@/ui/button';
 </script>
 
@@ -81,18 +80,7 @@
           bind:innerHTML={experience.aboutRole} 
         ></p>
         <div class="mt-3 flex flex-col space-y-0.5">
-          {#if experience.technologies.length > 0}
-              <div class="flex flex-wrap gap-2">
-                {#each experience.technologies as technology}
-                  {#each technologies.filter((s) => s.stack === technology) as { icon: Icon }}
-                    <Badge>
-                      <Icon width={14} height={14} class="flex-shrink-0" />
-                      <span>{technology}</span>
-                    </Badge>
-                  {/each}
-                {/each}
-              </div>
-          {/if}
+          <TechBadgeList tags={experience.technologies} />
         </div>
       </li>
     {/each}

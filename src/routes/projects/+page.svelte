@@ -4,17 +4,25 @@
   
   import { routeAnimation } from "@/ui/shared";
   import { projects } from "@/data/projects";
+  import { getPostsForProject } from "@/data/posts";
   import ProjectCard from "@/components/projectCard.svelte";
   import { ArrowUpRight, GitForkIcon } from "lucide-svelte";
 </script>
 
 <svelte:head>
   <title>Projects - zmra.dev</title>
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://zmra.dev/projects" />
   <meta property="og:title" content="César Zamora" />
   <meta property="og:description" content="Building cool stuff" />
-  <meta name="image" property="og:image" content="https://zmra.dev/images/readme-img.png" />
+  <meta property="og:image" content="https://zmra.dev/images/readme-img.png" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@heyzamora__" />
+  <meta name="twitter:title" content="César Zamora" />
+  <meta name="twitter:description" content="Building cool stuff" />
+  <meta name="twitter:image" content="https://zmra.dev/images/readme-img.png" />
 </svelte:head>
 
 <ViewContainer class={cn(routeAnimation, "flex flex-col space-y-4")}>
@@ -47,7 +55,7 @@
   
   <div class="grid grid-cols-1 gap-3">
     {#each projects as project}
-      <ProjectCard {...project} />
+      <ProjectCard {...project} postCount={getPostsForProject(project.title).length} />
     {/each}
   </div>
 </ViewContainer>
